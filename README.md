@@ -1,3 +1,12 @@
+
+git add .
+
+git commit -m ''
+
+git push https://github.com/thunghiemweb/asm4.git master
+
+git clone https://github.com/thunghiemweb/asm4.git asm4
+
 Môn học: RJS101x_01-A_VN_Lập trình web fornt end với react
 
 Bài tập số: 4
@@ -108,3 +117,129 @@ Nâng cao
 1. Thêm nhân viên mới vào công ty thành công
 2. Cập nhật thông tin nhân viên thành công
 3. Xoá nhân viên thành công
+
+
+
+
+
+
+
+
+
+
+
+
+Nội dung bài tập tự thực hành 4.1
+
+Bài exercise này không bắt buộc phải làm, tuy nhiên bài assignment được xây dựng dựa trên bài exercise này nên nếu bạn làm sẽ thuận lợi cho quá trình làm assignment của bạn hơn rất nhiều.
+
+Video hướng dẫn: Redux, Client-Server Communication and Fetch
+https://www.coursera.org/learn/front-end-react/lecture/FMNv2/assignment-4-redux-client-server-communication-and-fetch
+
+
+Coursera
+https://www.coursera.org/learn/front-end-react/lecture/FMNv2/assignment-4-redux-client-server-communication-and-fetch
+
+
+
+Tài liệu hướng dẫn: Redux, Client-Server Communication and Fetch |
+https://www.coursera.org/learn/front-end-react/peer/STzhv/redux-client-server-communication-and-fetch
+
+Coursera
+https://www.coursera.org/learn/front-end-react/peer/STzhv/redux-client-server-communication-and-fetch
+
+
+Tài liệu tham khảo: Redux, Client-Server Communication and Fetch: Additional Resources | 
+https://www.coursera.org/learn/front-end-react/supplement/u3P1n/assignment-4-redux-client-server-communication-and-fetch-additional-resources
+
+
+Coursera
+https://www.coursera.org/learn/front-end-react/supplement/u3P1n/assignment-4-redux-client-server-communication-and-fetch-additional-resources
+
+
+Thời gian làm bài dự kiến: 75 phút.
+
+Nội dung bài tập tự thực hành 4.2
+
+Lưu ý: Bài tập này sẽ không yêu cầu bắt buộc học viên phải làm, tuy nhiên học viên nên dành thời gian để tìm hiểu và làm vì yêu cầu của bài Assignment 4 sẽ có yêu cầu nâng cao sử dụng Redux Actions
+
+Hãy làm các bài exercise theo link dưới đây và đảm bảo rằng bạn sẽ không xoá repositories cho đến khi kết thúc môn học. Lưu kết quả bài exercise trên Github.
+
+Học viên vào link Video trên Coursera để xem chi tiết yêu cầu của bài, bản dịch đính kèm chỉ hỗ trợ dịch text.
+
+Lab (tài liệu hướng dẫn):
+
+Lab (Video): Combining Reducers
+https://www.coursera.org/learn/front-end-react/lecture/moj5l/exercise-video-combining-reducers
+
+Lab (tài liệu hướng dẫn): Combining Reducers 
+https://www.coursera.org/learn/front-end-react/supplement/PYeZk/exercise-instructions-combining-reducers
+
+
+Lab (Video): Redux Actions
+https://www.coursera.org/learn/front-end-react/lecture/Q1cLW/exercise-video-redux-actions
+
+
+Lab (tài liệu hướng dẫn): Redux Actions 
+https://www.coursera.org/learn/front-end-react/supplement/1eC3w/exercise-instructions-redux-actions
+
+
+Lưu ý, CommentForm nhắc đến trong hướng dẫn chính là Comment Component.
+Thời lượng làm bài dự kiến: 100 phút
+
+
+Nội dung bài tập tự thực hành 4.3
+
+Lưu ý: Bài tập này sẽ không yêu cầu học viên phải làm, tuy nhiên học viên nên dành thời gian để tìm hiểu và làm vì yêu cầu của bài Assignment 4 sẽ có yêu cầu sử dụng Redux Thunk
+
+Hãy làm các bài exercise theo link dưới đây và đảm bảo rằng bạn sẽ không xoá repositories cho đến khi kết thúc môn học. Lưu kết quả bài exercise trên Github.
+
+Học viên vào link Video trên Coursera để xem chi tiết yêu cầu của bài, bản dịch đính kèm chỉ hỗ trợ dịch text.
+
+Lab (Video): Redux Thunk
+https://www.coursera.org/learn/front-end-react/lecture/syFjH/exercise-video-redux-thunk
+
+Lab (tài liệu hướng dẫn): Redux Thunk
+https://www.coursera.org/learn/front-end-react/supplement/IEFsA/exercise-instructions-redux-thunk
+
+Lab (Video): React-Redux-Form Revisited
+https://www.coursera.org/learn/front-end-react/lecture/UINvH/exercise-video-react-redux-form-revisited
+
+Lab (tài liệu hướng dẫn): React-Redux-Form Revisited 
+https://www.coursera.org/learn/front-end-react/supplement/kLieG/exercise-instructions-react-redux-form-revisited
+
+
+Trong tài liệu hướng dẫn có nhầm lẫn, CommentComponent nhắc đến chính là ContactComponent.
+Ở ContactComponent, nếu bạn đang sử dụng LocalForm thì hãy sửa lại và sử dụng Form như hướng dẫn.
+Thời lượng làm bài dự kiến: 100 phút
+
+
+Nội dung bài tập thực hành 4.4
+
+Lưu ý: Bài tập này sẽ không yêu cầu học viên phải làm, tuy nhiên học viên nên dành thời gian để tìm hiểu và làm vì Animation sẽ giúp ứng dụng có UI tốt hơn, vậy nên, học viên hãy tích lũy kiến thức về các loại animation và thực hành sử dụng nó. Ngoài ra, cần một chút khiếu thẩm mỹ kết hợp với kinh nghiệm đó để có thể sử dụng phù hợp để tránh ảnh hưởng đến UX (animation rối mắt sẽ khiến người dùng khó sử dụng).
+
+Hãy làm các bài lab theo link dưới đây và đảm bảo rằng bạn sẽ không xoá repositories cho đến khi kết thúc môn học. Lưu kết quả bài Lab trên Githup.
+
+Đặt tên bài lab ở Github theo quy định sau: LAB+number_subnumber. Ví dụ: LAB01_1
+
+Học viên vào link Video trên Coursera để xem chi tiết yêu cầu của bài lab, bản dịch đính kèm chỉ hỗ trợ dịch text.
+
+Lab (Video): React Animations
+https://www.coursera.org/learn/front-end-react/lecture/b7D7h/exercise-video-react-animations
+
+Lab (tài liệu hướng dẫn): React Animations 
+https://www.coursera.org/learn/front-end-react/supplement/GuH6S/exercise-instructions-react-animations
+
+Tài liệu hướng dẫn thừa ký tự này, xoá đi là được.
+
+Lab (Video): React Animation Components
+https://www.coursera.org/learn/front-end-react/lecture/ES04n/exercise-video-react-animation-components
+
+Lab (tài liệu hướng dẫn): React Animation Components
+https://www.coursera.org/learn/front-end-react/supplement/RpfBq/exercise-instructions-react-animation-components
+
+Thời lượng làm bài dự kiến: 38 phút
+
+
+
+https://youtube.com/playlist?list=PLkY6Xj8Sg8-tmotihDcWZN0LvtXFyxmRZ
