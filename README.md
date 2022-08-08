@@ -243,3 +243,17 @@ Thời lượng làm bài dự kiến: 38 phút
 
 
 https://youtube.com/playlist?list=PLkY6Xj8Sg8-tmotihDcWZN0LvtXFyxmRZ
+
+
+
+
+
+
+https://viblo.asia/p/vi-sao-toi-thich-su-dung-redux-voi-react-Az45bnvQ5xY
+
+Mình thích redux vì cách nó hoạt động cũng như tư tưởng của nó, mọi thứ đều rất là rõ ràng và tường minh. Từ trên giao diện(view) khi bạn thực hiện 1 hành động gì đó(click button, hover chuột...) thì nó sẽ xảy ra 1 action, action đó có thể là thay đổi giao diện hoặc call api, nếu là call api thì sẽ có middleware xử lý việc đó, cuối cùng trả về reducer thì reducer sẽ quyết định state của ứng dụng thay đổi như thế nào và render lại giao diện để người dùng nhìn thấy. Tất cả đều hoạt động rất trơn tru và mượt mà 😃))
+
+
+cài đặt 
+redux
+react-redux

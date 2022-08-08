@@ -1,6 +1,6 @@
 import './App.css';
 
-import React from 'react'
+import React, { useReducer } from 'react'
 
 import { useState } from 'react';
 
@@ -10,8 +10,13 @@ import {
 } from "react-router-dom";
 
 
-import { STAFFS } from "./shared/staffs"
-import { DEPARTMENTS } from "./shared/staffs"
+// di chuyển dòng này đến reducer.js
+// import { STAFFS } from "./shared/staffs"
+// import { DEPARTMENTS } from "./shared/staffs"
+
+
+
+
 
 import HTThanhDieuHuong from "./trang/ThanhDieuHuong";
 import HTTrangBangLuong from "./trang/TrangBangLuong";
