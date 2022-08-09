@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, { useReducer } from 'react'
+import React from 'react'
 
 import { useState } from 'react';
 
@@ -11,12 +11,8 @@ import {
 
 
 // di chuyển dòng này đến reducer.js
-// import { STAFFS } from "./shared/staffs"
-// import { DEPARTMENTS } from "./shared/staffs"
-
-
-
-
+import { STAFFS } from "./shared/staffs"
+import { DEPARTMENTS } from "./shared/staffs"
 
 import HTThanhDieuHuong from "./trang/ThanhDieuHuong";
 import HTTrangBangLuong from "./trang/TrangBangLuong";
@@ -29,6 +25,10 @@ import HTTrangThemNhanVien from "./trang/TrangThemNhanVien";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment, incrementByAmount } from "./redux/counter";
+
+
 function App(props) {
 
   // useState nhận dữ liệu từ Child component 
@@ -37,9 +37,18 @@ function App(props) {
   const [listNV, setlistNV] = useState(STAFFS);
 
   // console.log(listNV);
+  const { count } = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
 
   return (
     <div className="App">
+
+      <div>
+        <h1> The count is: {count}</h1>
+        <button onClick={() => dispatch(increment())}>Tăng</button>
+        <button onClick={() => dispatch(decrement())}>Giảm</button>
+        <button onClick={() => dispatch(incrementByAmount(5))}>Increment by 33</button>
+      </div>
 
       {/* Phần đầu trang */}
       <HTThanhDieuHuong />
