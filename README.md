@@ -257,3 +257,5 @@ Mình thích redux vì cách nó hoạt động cũng như tư tưởng của n�
 cài đặt 
 redux
 react-redux
+
+https://redux-toolkit.js.org/tutorials/quick-start

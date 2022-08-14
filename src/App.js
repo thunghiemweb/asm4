@@ -25,8 +25,8 @@ import HTTrangThemNhanVien from "./trang/TrangThemNhanVien";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, incrementByAmount } from "./redux/counter";
+
+
 
 
 function App(props) {
@@ -37,18 +37,10 @@ function App(props) {
   const [listNV, setlistNV] = useState(STAFFS);
 
   // console.log(listNV);
-  const { count } = useSelector((state) => state.counter);
-  const dispatch = useDispatch();
+
 
   return (
     <div className="App">
-
-      <div>
-        <h1> The count is: {count}</h1>
-        <button onClick={() => dispatch(increment())}>Tăng</button>
-        <button onClick={() => dispatch(decrement())}>Giảm</button>
-        <button onClick={() => dispatch(incrementByAmount(5))}>Increment by 33</button>
-      </div>
 
       {/* Phần đầu trang */}
       <HTThanhDieuHuong />
