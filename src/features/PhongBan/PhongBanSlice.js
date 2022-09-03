@@ -5,7 +5,7 @@ export const LayPhongBan = createAsyncThunk(
     'posts/getPosts',
     // callback function
     async (thunkAPI) => {
-        const res = await fetch('http://localhost:3001/departments').then(
+        const res = await fetch('http://localhost:3001/departments.json').then(
             (data) => data.json()
         )
         return res

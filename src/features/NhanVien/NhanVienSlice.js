@@ -5,7 +5,7 @@ export const layDSNV = createAsyncThunk(
     'posts/getPosts',
     // callback function
     async (thunkAPI) => {
-        const res = await fetch('http://localhost:3001/staffs').then(
+        const res = await fetch('http://localhost:3001/staffs.json').then(
             (data) => data.json()
         )
         return res

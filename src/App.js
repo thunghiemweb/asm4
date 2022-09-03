@@ -15,13 +15,13 @@ import { STAFFS } from "./shared/staffs"
 import { DEPARTMENTS } from "./shared/staffs"
 
 import HTThanhDieuHuong from "./trang/ThanhDieuHuong";
-import HTTrangBangLuong from "./trang/TrangBangLuong";
-import HTTrangNhanVien from "./features/NhanVien/TrangNhanVien";
-import HTTrangPhongBan from "./features/PhongBan/TrangPhongBan";
 import HTPhanChanTrang from "./trang/PhanChanTrang";
 import HTTrangChiTietNV from "./trang/TrangChiTietNV";
-
 import HTTrangThemNhanVien from "./trang/TrangThemNhanVien";
+
+import HTTrangBangLuong from "./features/BangLuong/TrangBangLuong";
+import HTTrangNhanVien from "./features/NhanVien/TrangNhanVien";
+import HTTrangPhongBan from "./features/PhongBan/TrangPhongBan";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -63,7 +63,7 @@ function App(props) {
 
         <Route path="LinkTrangPhongBan" element={<HTTrangPhongBan />} />
 
-        <Route path="LinkTrangBangLuong" element={<HTTrangBangLuong dsnv={listNV} />} />
+        <Route path="LinkTrangBangLuong" element={<HTTrangBangLuong />} />
 
 
       </Routes>
