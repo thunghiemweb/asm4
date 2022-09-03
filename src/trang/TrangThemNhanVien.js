@@ -40,7 +40,6 @@ class TrangThemNhanVien extends React.Component {
 
             },
 
-
         };
 
         // thêm vào đầu để tạo giá trị mặc định

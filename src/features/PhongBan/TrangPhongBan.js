@@ -2,28 +2,35 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { LayPhongBan } from './PhongBanSlice'
 
+function TrangPhongBan() {
 
-function TrangPhongBan(props) {
-    const mangnv = props.dsnv;
+    const dispatch = useDispatch();
 
-    const mang = props.chucvu.map((e) => {
+    const { PhongBan, loading } = useSelector((state) => state.PhongBan);
+
+    useEffect(() => {
+        dispatch(LayPhongBan())
+    }, [dispatch])
+
+    if (loading !== 'fulfilled') return <p>loading...</p>
+
+    const mang = PhongBan.map((e) => {
         return (
             <div key={e.id} className="col-6 col-sm-4 col-md-2 "  >
 
                 <Card >
                     <Card.Body>
                         <Card.Title>{e.name}</Card.Title>
-                        <Card.Text> Số lượng nhân viên: {mangnv.filter(x => x.department.name === e.name).length}</Card.Text>
+                        <Card.Text>Số lượng nhân viên: {e.numberOfStaff}</Card.Text>
                     </Card.Body>
                 </Card>
-
-
             </div>
         );
     });
-
-
 
     return (
         <div className="TrangPhongBan">

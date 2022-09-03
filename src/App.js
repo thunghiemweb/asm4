@@ -16,8 +16,8 @@ import { DEPARTMENTS } from "./shared/staffs"
 
 import HTThanhDieuHuong from "./trang/ThanhDieuHuong";
 import HTTrangBangLuong from "./trang/TrangBangLuong";
-import HTTrangNhanVien from "./trang/TrangNhanVien";
-import HTTrangPhongBan from "./trang/TrangPhongBan";
+import HTTrangNhanVien from "./features/NhanVien/TrangNhanVien";
+import HTTrangPhongBan from "./features/PhongBan/TrangPhongBan";
 import HTPhanChanTrang from "./trang/PhanChanTrang";
 import HTTrangChiTietNV from "./trang/TrangChiTietNV";
 
@@ -25,18 +25,10 @@ import HTTrangThemNhanVien from "./trang/TrangThemNhanVien";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
-
 function App(props) {
-
-  // useState nhận dữ liệu từ Child component 
-  const [NhanVienDuocChon, setNhanVienDuocChon] = useState(null);
 
   const [listNV, setlistNV] = useState(STAFFS);
 
-  // console.log(listNV);
 
 
   return (
@@ -50,12 +42,13 @@ function App(props) {
 
         {/* Lấy dữ liệu từ trang nhân viên để gửi sang trang chi tiết nhân viên */}
         <Route path="/"
-          element={<HTTrangNhanVien dsnv={listNV} ChonNV={NhanVienDuocChon => setNhanVienDuocChon(NhanVienDuocChon)} />}
+          element={<HTTrangNhanVien />}
         />
 
-
         {/* Nhận chi tiết nhân viên để hiển thị */}
-        <Route path="staffs/*" element={<HTTrangChiTietNV nv={NhanVienDuocChon} />} />
+        <Route path="staffs/*"
+          element={<HTTrangChiTietNV />}
+        />
 
 
         <Route path="LinkTrangThemNhanVien"
@@ -68,7 +61,7 @@ function App(props) {
             />}
         />
 
-        <Route path="LinkTrangPhongBan" element={<HTTrangPhongBan chucvu={DEPARTMENTS} dsnv={STAFFS} />} />
+        <Route path="LinkTrangPhongBan" element={<HTTrangPhongBan />} />
 
         <Route path="LinkTrangBangLuong" element={<HTTrangBangLuong dsnv={listNV} />} />
 

@@ -1,3 +1,11 @@
+Sử dụng redux toolkit
+
+https://blog.logrocket.com/using-redux-toolkits-createasyncthunk/
+
+
+https://github.com/Rowadz/react-redux-toolkit-yt.git
+
+https://viblo.asia/p/async-api-fetching-voi-redux-toolkit-Eb85org8l2G
 
 git add .
 
